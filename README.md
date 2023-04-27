@@ -11,6 +11,7 @@ Repositorio de tareas tercer semestre 2023 De las materias Programación 3 y Lab
   <li> Gabriela Silva</li>
   <li> Ivana Germir</li>
   <li> Adriana Da Silva</li>
+  <li> Juan Pablo Ayoroa</li>
  </ul>
  
  <br>
