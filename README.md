@@ -1,4 +1,4 @@
-# CodeStyle3erSemestre
+# CodeStyle-3er-Semestre
 Repositorio de tareas tercer semestre 2023 De las materias Programación 3 y Laboratorio 3.
 <hr>
 
