@@ -1,5 +1,5 @@
 from dominio.Pelicula import Pelicula
-from servicio.catalogo_peliculas import  CatalogoPeliculas
+from servicio.catalogo_peliculas import  CatalogoPeliculas as cp
 opcion = None
 while opcion != 4:
     try:
