@@ -2,7 +2,7 @@
 Repositorio de tareas tercer semestre 2023 De las materias Programación 3 y Laboratorio 3.
 <hr>
 
-![github utn](https://drive.google.com/drive/folders/1GaCXaiSIB43K6gU8mEzvK6dHTtRINB9k)
+![github utn](https://github.com/CodeSystem2022/CodeStyle3erSemestre/blob/main/asets/Make%20your%20README.png)
 
 <ul>
 <h2>Integrantes: </h2>
