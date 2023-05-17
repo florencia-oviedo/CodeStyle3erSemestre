@@ -38,6 +38,14 @@ Repositorio de tareas tercer semestre 2023 De las materias Programación 3 y Lab
     <td>Sprint 4</td>
     <td>Dana Angellotti</td>
   </tr>
+  <tr>
+    <td>Sprint 5</td>
+    <td>Adriana Da Silva</td>
+  </tr>
+  <tr>
+    <td>Sprint 6</td>
+    <td>Adriana Da Silva</td>
+  </tr>
  </table>
   
 
