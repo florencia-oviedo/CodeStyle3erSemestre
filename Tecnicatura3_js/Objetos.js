@@ -105,3 +105,63 @@ console.log(padre.nombreCompleto()); // Utilizamos la funcion
 let madre = new Persona3("Laura", "Contrera", "contreral@gmail.com");
 console.log(madre);
 console.log(madre.nombreCompleto());
+
+/* Martin Verstraeten */
+//diferentes formas de crear objetos 
+// Caso 1
+let miObjeto = new Object(); //opcion mas formal
+// caso 2
+let miObjeto2 = {}; // opcion breve y recomendada
+// Caso String 1
+let miCadena = new String('Hola'); // sintaxix formal
+// Caso String 2
+let miCadena2 = 'Hola';
+// Caso con numeros 1
+let miNumero = new Number(10); // formal no recomendable
+// Caso con numeros 2
+let miNumero2 = 10;
+// Caso boolean 1
+let miBoolean = new Boolean(false); // formal
+// Caso boolean 2
+let miBoolean2 = false; // recomendada
+// Caso arreglos 1
+let miArreglo = new Array();
+// Caso arreglo 2
+let miArreglo2 = []; //recomendada
+// Caso funciones 1
+let miFuncion = new function(){};
+// Caso funciones 2
+let miFuncion2 = function(){}; // recomendada
+
+/* -- Uso de Prototype -- */
+//para agregar un metodo nuevo a una clase
+Persona3.prototype.telefono = '132465798'
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '54911132465798';
+console.log(madre.telefono);
+
+/* -- Uso de Call -- */
+//para llamar un metodo que esta definido en un objeto, desde otro objeto.
+let Persona4 = {
+    nombre: 'Juan',
+    apellido: 'Lopez',
+    nombreCompleto2: function(/*titulo, telefono*/){//se comenta para probar Apply()
+        //return titulo+': '+this.nombre+' '+this.apellido+' '+telefono;//se comenta para probar Apply()
+        return this.nombre+' '+this.apellido;
+    }
+}
+let Persona5 = { //no se definio el metodo nombreCompleto
+    nombre: 'Carlos',
+    apellido: 'Lara' 
+}
+
+console.log(Persona4.nombreCompleto2(/*'Lic.', '549261459873'*/))
+console.log(Persona4.nombreCompleto2.call(Persona5, 'Ing.', '549116547892'));
+
+/* -- Metodo Apply -- */
+// La diferencia con call() es la forma en que se pasan los argumentos
+console.log(Persona4.nombreCompleto2.apply(Persona5))
+
+//let arreglo = ['Ìng.', '549112584659'];
+//console.log(Persona4.nombreCompleto2.apply(Persona5, arreglo)) // funciona sin los comentarios del Persona4
