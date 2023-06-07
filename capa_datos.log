@@ -1,0 +1,52 @@
+07:37:31 PM:DEBUG [Persona.py:53] <__main__.Persona object at 0x000001F423B8F2D0>
+07:38:34 PM:DEBUG [Persona.py:53] <__main__.Persona object at 0x0000012A769FF950>
+07:40:56 PM:DEBUG [Persona.py:53] <__main__.Persona object at 0x0000020C9E51F890>
+07:43:09 PM:DEBUG [Persona.py:53] <__main__.Persona object at 0x00000251BE49F950>
+07:48:57 PM:DEBUG [Persona.py:53] 
+        Id Persona:1,
+        Nombre:juan,
+        Apellido: Perez,
+        Email:Jperez@mail.com
+         
+07:48:57 PM:DEBUG [Persona.py:55] 
+        Id Persona:2,
+        Nombre:jose,
+        Apellido: Paez,
+        Email:Jpaez@mail.com
+         
+07:54:40 PM:DEBUG [Persona.py:53] 
+        Id Persona:1,
+        Nombre:juan,
+        Apellido: Perez,
+        Email:Jperez@mail.com
+        
+07:54:40 PM:DEBUG [Persona.py:55] 
+        Id Persona:None,
+        Nombre:jose,
+        Apellido: Paez,
+        Email:Jpaez@mail.com
+        
+07:54:40 PM:DEBUG [Persona.py:57] 
+        Id Persona:1,
+        Nombre:juan,
+        Apellido: Perez,
+        Email:Jperez@mail.com
+        
+07:55:49 PM:DEBUG [Persona.py:53] 
+        Id Persona:1,
+        Nombre:juan,
+        Apellido: Perez,
+        Email:Jperez@mail.com
+        
+07:55:49 PM:DEBUG [Persona.py:55] 
+        Id Persona:None,
+        Nombre:jose,
+        Apellido: Paez,
+        Email:Jpaez@mail.com
+        
+07:55:49 PM:DEBUG [Persona.py:57] 
+        Id Persona:1,
+        Nombre:juan,
+        Apellido: Perez,
+        Email:Jperez@mail.com
+        
