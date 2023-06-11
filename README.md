@@ -50,6 +50,10 @@ Repositorio de tareas tercer semestre 2023 De las materias Programación 3 y Lab
     <td>Sprint 7</td>
     <td>Juan Pablo Ayoroa</td>
   </tr>
+  <tr>
+    <td>Sprint 8</td>
+    <td>Juan Pablo Ayoroa</td>
+  </tr>
  </table>
   
 
