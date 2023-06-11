@@ -26,4 +26,8 @@ class Conexion:
                 sys.exit()
         else:
             return cls._conexion
+        
+
+    
+    
 
