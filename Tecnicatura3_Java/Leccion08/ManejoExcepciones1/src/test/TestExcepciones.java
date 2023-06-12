@@ -9,9 +9,6 @@ public class TestExcepciones {
         int resultado = 0;
         try{
             resultado = division(10, 0);
-        } catch(OperacionException e){
-            System.out.println("Ocurrio un error de tipo OperacionException");
-            System.out.println(e.getMessage());
         } catch(Exception e){
             System.out.println("Ocurrió un error");
             e.printStackTrace(System.out); //se conoce como pila de excepciones
