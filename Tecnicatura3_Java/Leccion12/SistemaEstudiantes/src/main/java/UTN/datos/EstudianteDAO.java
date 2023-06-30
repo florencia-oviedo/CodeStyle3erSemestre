@@ -18,7 +18,7 @@ public class EstudianteDAO {
         ResultSet rs; // Obtenemos el resultado de la BD
         // Creamos un objeto de tipo conexión
         Connection con = getConnection();
-        String sql = "SELECT * FROM estudiantes2022 ORDER BY estudiantes2022";
+        String sql = "SELECT * FROM estudiantes2022 ORDER BY idestudiantes2022";
         try{
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
@@ -44,4 +44,46 @@ public class EstudianteDAO {
         } // fin finally
         return estudiantes;
     } //Fin método listar
+
+    //Métdodo por id -> fin by id
+    public boolean buscarEstudiantePorId(Estudiante estudiante){
+        PreparedStatement ps;
+        ResultSet re;
+        Connection con = getConnection();
+        String sql = "SELECT * FROM estudiantes2022 WHERE idestudiantes2022=?";
+        try{
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, estudiante.getIdEstudiante())
+            rs = ps.executeQuery();
+            if(rs.next()){
+                    estudiante.setNombre(rs.getString("nombre"));
+                    estudiante.setApellido(rs.getString("apellido"));
+                    estudiante.setTelefono(rs.getString("telefono"));
+                    estudiante.setEmail(rs.getString("email"));
+                    return true // se encontró un registro
+            } // fin if
+        }catch(Exception e){
+            System.out.println("Ocurrió un error al buscar estudiante: " +e.getMessage());
+        }// fin catch
+        finally{
+            try{
+                con.close();
+            }catch(Exception e){
+                System.out.println("ocurrió un error al cerrar la conexión: "+e.getMessage());
+
+            }//fin catch
+
+        }//fin fynally
+        return false;
+    }
+
+
+    public static void main(String[] args){
+        //listar los estudiantes
+        var EstudianteDao = new EstudianteDAO();
+        System.out.println("Listado de estudiantes: ");
+        List<Estudiante> estudiantes = EstudianteDAO.listarEstudiantes();
+        estudiantes.forEach(System.out::println); // Función lambda para imprimir
+    }
+
 }
