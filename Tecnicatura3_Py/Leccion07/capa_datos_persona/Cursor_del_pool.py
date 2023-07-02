@@ -15,7 +15,7 @@ class CursorDelPool:
     def __exit__(self, tipo_exception, valor_exception, detalle_exception):
         log.debug('Se ejecuta el metodo exit')
         if valor_exception:
-            self._conexion.rollback
+            self._conexion.rollback()
             log.debug(f'Ocurrio una excepcion: {valor_exception}')
         else:
             self._conexion.commit()
